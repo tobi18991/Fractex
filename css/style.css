@@ -1,0 +1,198 @@
+html,
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 0.05em;
+	background-color: #111;
+	color: #eee;
+}
+
+#header {
+	background-color: #050505;
+	overflow: hidden;
+}
+
+#header #header_title {
+	float: left;
+	width: 200px;
+}
+
+#header #header_title a {
+	display: block;
+	padding: 25px;
+	text-decoration: none;
+	color: #eee;
+}
+
+#header #header_nav {
+	float: right;
+	height: 90px;
+}
+
+#header #header_nav ul li {
+	display: inline-block;
+}
+
+#header #header_nav ul li a {
+	display: block;
+	margin: 0 10px;
+	padding: 35px 25px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+#header #header_nav ul li a:hover:first-letter {
+	color: #d91e18;
+}
+
+#main {
+	margin: 30px 0 0;
+	overflow: hidden;
+}
+
+#main #left {
+	float: left;
+	margin: 20px;
+	width: 800px;
+}
+
+#main #left #explorer {
+	position: relative;
+	width: 800px;
+	height: auto;
+	overflow: hidden;
+}
+
+#main #left #explorer #fractal {
+	width: 800px;
+	height: 600px;
+}
+
+#main #left #explorer #overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#main #left #explorer #overlay p {
+	padding: 20px 80px;
+	text-align: center;
+	width: 100%;
+}
+
+#main #left #explorer #control {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+#main #right {
+	margin: 20px 20px 20px 880px;
+}
+
+#footer {
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+/*
+ * Media Queries
+ */
+@media only all and (max-width: 1350px)
+{
+	#main #left {
+		width: 600px;
+	}
+
+	#main #left #explorer {
+		width: 600px;
+	}
+
+	#main #left #explorer #fractal {
+		width: 600px;
+		height: 450px;
+	}
+
+	#main #right {
+		margin-left: 680px;
+	}
+}
+
+@media only all and (max-width: 1150px)
+{
+	#header #header_title {
+		float: none;
+		width: 100%;
+	}
+
+	#header #header_nav {
+		float: none;
+		height: auto;
+	}
+
+	#main #left {
+		float: none;
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	#main #left #explorer {
+		width: 100%;
+	}
+
+	#main #left #explorer #fractal {
+		margin: 0 auto;
+	}
+
+	#main #left #explorer #overlay {
+		width: 600px;
+		height: 450px;
+		margin: 0 auto;
+	}
+
+	#main #left #explorer #overlay p {
+		padding: 10px;
+	}
+
+	#main #right {
+		margin: 75px 100px 20px;
+	}
+}
+
+@media only all and (max-width: 650px)
+{
+	#header #header_nav ul li {
+		display: list-item;
+	}
+
+	#header #header_nav ul li a {
+		padding: 20px;
+	}
+
+	#main #left #explorer #fractal {
+		width: 400px;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+	#main #left #explorer #overlay {
+		width: 400px;
+		height: 300px;
+	}
+
+	#main #left #explorer #control {
+		position: static;
+		padding: 10px;
+		width: 100%;
+	}
+
+    #main #right {
+	    margin: 20px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Julia-Fractal || Fractex</title>
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/tags.css" />
+	<link rel="stylesheet" type="text/css" href="css/class.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.2.2/pixi.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/julia.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<div id="header_title">
+			<a href="index.html"><h1>Fractex</h1></a>
+		</div>
+
+		<nav id="header_nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="julia.html">Julia-Fractal</a></li>
+				<li><a href="mandel.html">Mandelbrot</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main">
+		<article id="left">
+			<div id="explorer">
+				<div id="fractal"></div>
+
+				<div id="overlay">
+					<p>
+						After clicking the button underneath, you will see your generated Julia-Fractal. On
+						the right-hand side you can change special parameters and choose a theme.<br />
+						<br />
+						<button id="julia_draw">Draw your Julia-Fractal</button>
+					</p>
+				</div>
+
+				<div id="control">
+					<button id="julia_move_left">Left</button>
+					<button id="julia_move_right">Right</button>
+					<button id="julia_move_up">Up</button>
+					<button id="julia_move_down">Down</button>
+					<button id="julia_zoom_in">Zoom In</button>
+					<button id="julia_zoom_out">Zoom Out</button>
+					<button id="julia_reset">Reset</button>
+				</div>
+			</div>
+		</article>
+
+		<aside id="right">
+			<section class="box title" style="background-color:#663399;">
+				<h2>Julia-Fractal</h2>
+			</section>
+
+			<section class="box">
+				<h3>Constant c</h3>
+
+				<table>
+					<tr>
+						<td><label for="julia_rel">Re(z):</label></td>
+						<td><input type="number" id="julia_rel" step="0.01" value="0.3" min="-2.0" max="2.0" /></td>
+					</tr>
+					<tr>
+						<td><label for="julia_im">Im(z):</label></td>
+						<td><input type="number" id="julia_im" step="0.01" value="0.5" min="-2.0" max="2.0" /></td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="box">
+				<h3>Function</h3>
+
+				<table>
+					<tr>
+						<td><label for="julia_function">f(z) =</label></td>
+						<td><input type="text" id="julia_function" value="x^2+c" readonly="readonly" /></td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="box">
+				<h3>Theme</h3>
+				<p>
+					<label for="julia_theme">Choose your theme:</label>
+
+					<select id="julia_theme" size="1">
+						<option value="1" selected="selected">Red</option>
+						<option value="2">Blue</option>
+						<option value="3">Green</option>
+					</select>
+				</p>
+			</section>
+
+			<section class="box">
+				<h3>About the Julia-Fractal</h3>
+				<p>
+					Something...
+				</p>
+			</section>
+		</aside>
+	</main>
+
+	<footer id="footer">
+		<p>
+			&copy; 2017, Fractex created by Tobias W.<br />
+			See GitHub Page for further information.
+		</p>
+	</footer>
+</body>
+</html>

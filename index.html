@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Welcome to Fractex: The ultimate fractal exploere based on WebGL</title>
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/tags.css" />
+	<link rel="stylesheet" type="text/css" href="css/class.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.2.2/pixi.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/mandel.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<div id="header_title">
+			<a href="index.html"><h1>Fractex</h1></a>
+		</div>
+
+		<nav id="header_nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="julia.html">Julia-Fractal</a></li>
+				<li><a href="mandel.html">Mandelbrot</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main">
+		<article id="left">
+			<section class="section">
+				<h2>Welcome to Fractex</h2>
+				<p>
+					This is the ultimate fractal explorer based on WebGL! You can create fractals in your own browser
+					and explorer them, live. All fractals have the ability to be changed by parameters, so you can see,
+					how they may look differently with other options.
+				</p>
+				<p>
+					In the moment this project is under development, but you can explore some fractals yet. Please see
+					the list below to test one of my fractal explorers.
+				</p>
+			</section>
+
+			<section class="section">
+				<h2>All explorers on Fractex</h2>
+
+				<div class="preview">
+					<a href="julia.html">
+						<div class="preview_image" style="background-image:url('img/julia.png')"></div>
+						<div class="preview_text">Julia-Fractal</div>
+					</a>
+				</div>
+
+				<div class="preview">
+					<a href="mandel.html">
+						<div class="preview_image" style="background-image:url('img/mandelbrot.png')"></div>
+						<div class="preview_text">Mandelbrot</div>
+					</a>
+				</div>
+			</section>
+		</article>
+
+		<aside id="right">
+			<section class="box title" style="background-color:#d91e18;">
+				<h2>Fractex</h2>
+			</section>
+
+			<section class="box">
+				<h3>About</h3>
+				<p>
+					Something...
+				</p>
+			</section>
+		</aside>
+	</main>
+
+	<footer id="footer">
+		<p>
+			&copy; 2017, Fractex created by Tobias W.<br />
+			See GitHub Page for further information.
+		</p>
+	</footer>
+</body>
+</html>
