@@ -3,7 +3,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 0.05em;
 	background-color: #111;
-	color: #eee;
+	color: #aaa;
 }
 
 #header {
@@ -39,7 +39,7 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
-	color: inherit;
+	color: #eee;
 }
 
 #header #header_nav ul li a:hover:first-letter {
@@ -67,6 +67,8 @@ body {
 #main #left #explorer #fractal {
 	width: 800px;
 	height: 600px;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 #main #left #explorer #overlay {
@@ -167,6 +169,10 @@ body {
 
 @media only all and (max-width: 650px)
 {
+	#header #header_title {
+		text-align: center;
+	}
+
 	#header #header_nav ul li {
 		display: list-item;
 	}
