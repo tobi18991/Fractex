@@ -13,7 +13,7 @@ options. The perfect way for studying fractals!
 These are all the explorers that are currently on Fractex:
 
 * Mandelbrot
-* Julia-fractal
+* Julia-Fractal
 
 *More explorers will come soon...*
 
