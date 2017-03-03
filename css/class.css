@@ -70,6 +70,10 @@
 	height: 24px;
 }
 
+.box.title h2 {
+	color: #eee !important;
+}
+
 /*
  * Media Queries
  */

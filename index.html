@@ -2,21 +2,13 @@
 
 <html lang="en">
 <head>
-	<title>Welcome to Fractex: The ultimate fractal exploere based on WebGL</title>
+	<title>Welcome to Fractex: The ultimate fractal explorer based on WebGL</title>
 
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/tags.css" />
-	<link rel="stylesheet" type="text/css" href="css/class.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.2.2/pixi.min.js"></script>
-	<script src="js/core.js"></script>
-	<script src="js/mandel.js"></script>
 </head>
 
 <body>
@@ -28,8 +20,8 @@
 		<nav id="header_nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="julia.html">Julia-Fractal</a></li>
 				<li><a href="mandel.html">Mandelbrot</a></li>
+				<li><a href="julia.html">Julia-Fractal</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -39,13 +31,16 @@
 			<section class="section">
 				<h2>Welcome to Fractex</h2>
 				<p>
-					This is the ultimate fractal explorer based on WebGL! You can create fractals in your own browser
-					and explorer them, live. All fractals have the ability to be changed by parameters, so you can see,
-					how they may look differently with other options.
+					This is the ultimate fractal-explorer based on WebGL. You can create fractals in your own browser
+					and explore them live on this site. All explorers have the ability to change parameters of a
+					fractal, so you can see how different they will look for other options. Also with WebGL all
+					explorers are very fast (less than a second rendering time!).
 				</p>
 				<p>
-					In the moment this project is under development, but you can explore some fractals yet. Please see
-					the list below to test one of my fractal explorers.
+					Fractex has a nice and simple responsive design so it's possible to use these explorers also on a
+					smartphone or tablet. You don't need any extra app for Fractex, because all you need is your
+					browser! That's why I tried to make this site as lightweight as possible to give you also the best
+					experiences on the go.
 				</p>
 			</section>
 
@@ -76,7 +71,15 @@
 			<section class="box">
 				<h3>About</h3>
 				<p>
-					Something...
+					Fractex was created after a prototype for exploring the Mandelbrot set. Because of a very slow
+					rendering time about five to ten seconds with JavaScript, I tried to speed up the rendering process
+					for an image. With WebGL and shaders it is now possible to render an image within less a second.
+				</p>
+				<p>
+					But I had a specific reason to make this explorer: In my school, I have a seminar about scientific
+					work, where we study a specific subject. Mine is about complex numbers. These numbers are  building
+					the base for the Mandelbrot set and so I decided to build an explorer myself to make "my own"
+					Mandelbrot fractal. This explorer is now called Fractex.
 				</p>
 			</section>
 		</aside>
@@ -85,7 +88,8 @@
 	<footer id="footer">
 		<p>
 			&copy; 2017, Fractex created by Tobias W.<br />
-			See GitHub Page for further information.
+			See <a href="https://github.com/tobi18991/Fractex" target="_blank">GitHub Repository</a> for further
+			information.
 		</p>
 	</footer>
 </body>
